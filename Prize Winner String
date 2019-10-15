@@ -1,0 +1,4 @@
+winner = input("Enter the winner's name: ")
+prize = input("What is the prize: ")
+
+print("Congratulations,", winner, "! You won our weekly raffle. Your prize is a ", prize, ". Please collect it from the office!!")
