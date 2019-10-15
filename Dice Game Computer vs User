@@ -1,0 +1,24 @@
+# this is the first program
+import random 
+
+print("You are going to play against the computer!")
+
+name = str(input("Enter your name:\n"))
+dice = int(input("\nHow many numbers of dice do you want?\n"))
+sides = int(input("\nHow many sides of dice you want?\n"))
+
+maxNum = dice * sides
+num = random.randint(dice, maxNum)
+com_num = random.randint(dice, maxNum)
+
+print("\nYour roll value is " + str(num))
+print("\nThe computer roll value is " + str(com_num))
+
+if num > com_num:
+  print("\nCongrats! " + str(name) + " you won!")
+
+elif num < com_num:
+  print("\nLOL better luck next time!")
+
+else:
+  print("\nTry again.")
