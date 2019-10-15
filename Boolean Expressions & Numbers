@@ -1,0 +1,30 @@
+# Write a program to create boolean expressions for each of the comparisons listed below. For this program you will be working with four integer variables x, y, z and w. Get these numbers as input from the user and convert them to integers before storing them in the corresponding variables. 
+x = int(input("Enter a number as 'x': "))
+y = int(input("Enter a number as 'y': "))
+z = int(input("Enter a number as 'z': "))
+w = int(input("Enter a number as 'w': "))
+# 1. boolean expression to evaluate if (x+y) is greater than (z+w)
+xy = (x + y)
+zw = (z + w)
+print("(" + str(x), "+", str(y) + ") > (" + str(z), "+", str(w) + "):", xy > zw)
+# 2. boolean expression to evaluate if x is greater than y
+print(x, ">", y, ":", x > y)
+# 3. boolean expression to evaluate if y is greater than z
+print(y, ">", z, ":", y > z)
+# 4. boolean expression to evaluate if (x * y ) is less than (z * w)
+xy = (x * y)
+zw = (z * w)
+print("(" + str(x), "*", str(y) + ") < (" + str(z), "*", str(w) + "):", xy < zw)
+# 5. boolean expression to evaluate if x and y are equal
+print(x, "==", y, ":", x == y)
+# 6. boolean expression to evaluate if z and w are equal
+print(z, "==", w, ":", z == w)
+# 7. boolean expression to evaluate if z and w are NOT equal
+print(z, "!=", w, ":", z != w)
+# 8. boolean expression to evaluate if x and y are NOT equal
+print(x, "!=", y, ":", x != y)
+# 9. boolean expression to evaluate if x is greater than or equal to y
+print(x, ">=", y, ":", x >= y)
+# 10. boolean expression to evaluate if z is less than or equal to w 
+print(z, "<=", w, ":", z <= w)
+# Print the expressions and their results using print statements.
