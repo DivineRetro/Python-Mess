@@ -1,0 +1,42 @@
+# import random for game
+import random
+
+# introduction to game, set procedures
+print("\nWelcome to Guess the Number Game!")
+print("You have 7 tries to guess a number between 1 and 100, good luck!")
+
+# obtain random number
+randomNumber = random.randint(1,100)
+
+win = False
+count = 1
+
+# begin the guessing
+while win==False and count<8:
+    # first attempt until your last(7)
+    print("\nTry #{0}: What is your guess?: ".format(count))
+    try:
+        guess = int(input(""))
+    except ValueError:
+       print("Invalid input. Exiting program.")
+       exit()
+    
+    # keep it between the ruled amount
+    if guess<1 or guess>100:
+        print("This number is out of range! Remember the real number is between 1 and 100")
+    
+    # guess shows higher than the random number
+    elif guess>randomNumber:
+        print("Your number is too high!")
+        count += 1
+
+    # guess shows lower than the random number
+    elif guess<randomNumber:
+        print("Your number is too low!")
+        count += 1
+    # winner
+    else:
+        print("\nCongrats, you got it!")
+        exit()
+# loser
+print("\nSorry, try again!")
